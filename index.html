@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style1.css" />
+    <title>TRAVEL BOOKING</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <a href="#"> <img src="C:\Users\arsen\OneDrive\Documents\Manuel\HCI_FINAL-PROJECt\logo.png" alt="T&T Booking Logo" />
+ </a>
+      </div>
+      <ul class="nav__links">
+        <li class="link" data-target="header">Home</li>
+        <li class="link" data-target="blog">ABOUT</li>
+        <li class="link" data-target="offers">Offers</li>
+        <li class="link" data-target="services">Services</li>
+        <li class="link" data-target="contacts">Contacts</li>
+      </ul>
+    </nav>
+
+    <header id="header">
+      <div class="section__container">
+        <div class="header__content">
+          <h1>Travel</h1>
+          <p>
+            Embark on a journey of a lifetime and explore the world's most
+            breathtaking destinations with our expert travel advice. From exotic
+            beaches to cultural wonders, we've got you covered with our
+            comprehensive travel guides and insider tips.
+          </p>
+          <a href="ReadMore.html"><button>Read more</button></a>
+
+</div>
+    </header>
+
+    <section class="journey__container" id="offers">
+      <div class="section__container">
+        <h2 class="section__title">Offers</h2>
+        <p class="section__subtitle">The most searched countries in the world</p>
+        <div class="journey__grid">
+          <div class="country__card" onclick="showInfo(['greece.jpg', 'greece2.jpg', 'greece3.jpg'], 'Santorini is a fantastic Cycladic island in the southern Aegean Sea with astonishing volcanic scenery and world-famous sunset vistas. It comprises a luxury-oriented destination that is perfect for couples, with rich viticulture and history to dive into.')">
+            <img src="greece.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Santorini, Greece</span>
+            </div>
+          </div>
+          <div class="country__card" onclick="showInfo(['italy.jpg', 'italy2.jpg', 'italy3.jpg'], 'Vernazza is a picturesque, medieval village in the Cinque Terre region of Liguria, Italy. Its known for its colorful houses, natural harbor, and stunning location on the coastline, making it a favorite among travelers. The village offers a blend of natural beauty with its steep, terraced vineyards and historic architecture, including the Church of Santa Margherita d Antiochia and the Belforte Tower. ')">
+            <img src="italy.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Vernazza, Italy</span>
+            </div>
+          </div>
+          <div class="country__card" onclick="showInfo(['san-francisco.jpg', 'san-francisco2.jpg', 'san-francisco3.jpg'], 'San Francisco, city and port, coextensive with San Francisco county, northern California, U.S., located on a peninsula between the Pacific Ocean and San Francisco Bay. It is a cultural and financial centre of the western United States and one of the countrys most cosmopolitan cities.')">
+            <img src="san-francisco.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>San Francisco</span>
+            </div>
+          </div>
+          <div class="country__card" onclick="showInfo(['navagio.jpg', 'navagio2.jpg', 'navagio3.jpg'], 'Navagio Beach, also known as Shipwreck Beach, is a popular Greek beach on the island of Zakynthos, famous for its iconic shipwreck and stunning natural beauty. The beach is only accessible by boat, surrounded by cliffs, and features white sand, turquoise water, and the partially submerged wreck of the Panagiotis. ')">
+            <img src="navagio.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Navagio, Greece</span>
+            </div>
+          </div>
+          <div class="country__card" onclick="showInfo(['ao.jpg', 'ao2.jpg', 'ao3.jpg'], 'Ao Nang is a popular resort town in Krabi Province, Thailand, known for its beautiful beaches, stunning scenery, and vibrant atmosphere. Its a central point for exploring the Andaman Sea, with numerous tours and boat trips offering access to nearby islands, beaches, and attractions. The town itself has a lively main street with restaurants, shops, and bars catering to tourists, and Ao Nang Beach is great for sunbathing and swimming. ')">
+            <img src="ao.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Ao Nang, Thailand</span>
+            </div>
+          </div>
+          <div class="country__card" onclick="showInfo(['boracay.jpg', 'boracay2.jpg', 'boracay3.jpg'], 'Boracay is a small, tropical island in the Philippines known for its beautiful white sand beaches and clear blue waters. Its a popular destination for relaxation, beach activities, and vibrant nightlife. The island is located in the Western Visayas region, about 2 km off Panay Island. ')">
+            <img src="boracay.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Boracay, Philippines</span>
+            </div>
+          </div>
+        </div>
+        <div id="infoBox" class="info-box">
+          <button class="close-btn" onclick="closeInfo()">Close</button>
+          <div id="infoImages"></div>
+          <p id="infoText"></p>
+        </div>
+      </div>
+    </section>
+    <section class="banner__container" id="blog">
+      <div class="section__container">
+        <div class="banner__content">
+          <h2>About Travel and Tour</h2>
+          <p>
+            Tour and Travel involves the systematic planning, organization, and execution of travel experiences, encompassing aspects like itinerary creation, transportation, accommodation, and ensuring a smooth and enjoyable journey for individuals or groups. 
+          </p>
+          <a href="tours.html"><button onclick="toggleTours()">See Tours</button></a>
+      </div>
+       </section>
+ <section class="display__container" id="services">
+      <div class="section__container">
+        <h2 class="section__title">SERVICES</h2>
+        <p class="section__subtitle">
+          As we serve others we are working on ourselves; every act, every word, every gesture of genuine compassion naturally nourishes our own hearts as well.
+        </p>
+        <div class="display__grid">
+          <div class="display__card grid-1">
+            <img src="grid1.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <i class="ri-earth-line"></i>
+            <h4>BLOG</h4>
+            <p>Fuel your passion for adventure and discover new horizons</p>
+          </div>
+          <div class="display__card">
+            <img src="grid4.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <img src="grid3.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <i class="ri-road-map-line"></i>
+            <h4>Beautiful Places</h4>
+            <p>Uncover the world's most breathtakingly beautiful places</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contacts">
+      <div class="section__container">
+        <h4>CONTACTS</h4>
+        <div class="social__icons">
+          <span><a href="https://www.facebook.com/TravelNatures153" target="_blank"><i class="ri-facebook-fill"></i></span></a>
+          <span><a href="https://x.com/" target="_blank" ><i class="ri-twitter-fill"></i></span></a>
+          <span><a href="https://www.instagram.com/colztravel/" target="_blank"><i class="ri-instagram-line"></i></a></span>
+          <span><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></span>
+          
+        </div>
+        <p>+63-9-438-8217</p>
+        <p>8123-4567</p>
+        <p>
+          Travel makes one modest. You see what a tiny place you occupy in the
+          world.
+        </p>
+      </div>
+    </footer>
+
+ 
+    <script>
+       document.querySelectorAll('.link').forEach(link => {
+        link.addEventListener('click', function() {
+         
+          document.querySelectorAll('.link').forEach(item => item.classList.remove('active'));
+          
+          
+          this.classList.add('active');
+    
+          const targetId = this.getAttribute('data-target');
+          const targetElement = document.getElementById(targetId); 
+    
+         
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    
+      function showInfo(images, description) {
+    const infoBox = document.getElementById("infoBox");
+    const imagesContainer = document.getElementById("infoImages");
+    const text = document.getElementById("infoText");
+
+    // Clear previous images
+    imagesContainer.innerHTML = "";
+
+    // Add new images
+    images.forEach((imgSrc) => {
+      const img = document.createElement("img");
+      img.src = imgSrc;
+      img.alt = "Info Image";
+      imagesContainer.appendChild(img);
+    });
+
+    // Set the description
+    text.textContent = description;
+
+    // Show the box
+    infoBox.style.display = "block";
+    infoBox.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function closeInfo() {
+    document.getElementById("infoBox").style.display = "none";
+  }
+
+    </script>
+  </body>
+</html>
